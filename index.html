@@ -31,19 +31,19 @@
                 </div>
             </div>
 
-            <form id="form">
+            <div id="form">
                 <div class="row">
                   <div class="col-4">
-                    <input type="text" id="name" class="form-control" placeholder="Inserisci Nome Completo">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Inserisci Nome Completo">
                   </div>
                   <div class="col-4">
                     <input type="number" id="km" class="form-control" placeholder="Km">
                   </div>
-                  <div class="col-4 text-center ">
+                  <div class="col-4 text-center">
                     <select name="choose.age" id="age" required>
-                        <option value="1">Minorenne</option>
-                        <option value="2">Maggiorenne</option>
-                        <option value="3">Over 65</option>
+                        <option value="17">Minorenne</option>
+                        <option value="18">Maggiorenne</option>
+                        <option value="65">Over 65</option>
                     </select>
                   </div>
 
@@ -51,13 +51,13 @@
 
                     <div>
 
-                        <input type="submit" id="submit" class="btn btn-secondary mx-3 fw-bold" value="Genera" style="color: #b91450;"/>
+                        <input type="submit" id="send-btn" class="btn btn-secondary mx-3 fw-bold" value="Genera" style="color: #b91450;" onclick="displayShow()"/>
 
-                        <input type="submit" class="btn btn-secondary mx-3 fw-bold" value="Annulla" style="color: #b91450;"/>
+                        <input type="submit" id="cancel-btn" class="btn btn-secondary mx-3 fw-bold" value="Annulla" style="color: #b91450;" onclick="displayNone()"/>
                     </div>
                   </div>
                 </div>
-              </form>
+              </div>
         </div>
 
 
@@ -69,11 +69,13 @@
 
 
 
-        <h2 class="title text-center text-uppercase my-3 d-none">
-            il tuo biglietto
-        </h2>
+        
+        <div id="boxBiglietto" class="box-none my-3 bg-light rounded">
 
-       <div class="my-3 bg-light rounded d-none">
+           <h2 class="title text-center text-uppercase my-3">
+               il tuo biglietto
+           </h2>
+
             <div class="container-two">
                 <div class="row box-passenger p-3">
                     <h6 class="text-uppercase fw-bold">
@@ -84,6 +86,11 @@
                         <h6 class="text-uppercase fw-bold py-2 ">
                             nome passeggero
                         </h6>
+                        <div>
+                            <span id="nomePass">
+                                
+                            </span>
+                        </div>
                     </div>
                     <div class="row box-border col-10">
                         <div class="col-3 my-3">
@@ -108,7 +115,7 @@
                             <span class="p-3">45633</span>
                         </div>
                         <div class="col-3 my-3">
-                            <span class="p-3">2.10€</span>
+                            <span id="costoTicket" class="p-3"></span>
                         </div>
                     </div>
                     
