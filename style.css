@@ -1,0 +1,39 @@
+html{
+    font-family: sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background-color: #b91450;
+}
+
+.title{
+    color: white;
+
+    font-weight: bold;
+}
+
+.center-items{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    height: 200px;
+}
+
+
+.title-grid{
+    color: #b91450;
+}
+
+
+.btn-generate{
+    background-color: grey;
+}
