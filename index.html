@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <form>
+            <form id="form">
                 <div class="row">
                   <div class="col-4">
                     <input type="text" class="form-control" placeholder="Inserisci Nome Completo">
@@ -50,17 +50,79 @@
                   <div class="container-button my-5 text-center">
 
                     <div>
-                        <button class="btn btn-secondary mx-3 ">
-                            <span class="title-grid fw-bold ">Genera</span>
-                        </button>
-                        <button class="btn btn-secondary">
-                            <span class="title-grid fw-bold ">Annulla</span>
+
+                        <input type="submit" class="btn btn-secondary mx-3 fw-bold" value="Genera" style="color: #b91450;"/>
+
+                        <input type="submit" class="btn btn-secondary mx-3 fw-bold" value="Annulla" style="color: #b91450;"/>
+
+                        
+                        <button id="clear" class="btn btn-secondary">
+                            <span class="title-grid fw-bold" onclick="resetDati">Annulla</span>
                         </button>
                     </div>
                   </div>
                 </div>
               </form>
         </div>
+
+
+
+
+
+
+
+
+
+
+        <h2 class="title text-center text-uppercase my-3 d-none">
+            il tuo biglietto
+        </h2>
+
+       <div class="my-3 bg-light rounded d-none">
+            <div class="container-two">
+                <div class="row box-passenger p-3">
+                    <h6 class="text-uppercase fw-bold">
+                        dettagli passeggero
+                    </h6>
+
+                    <div class="box-grey col-2">
+                        <h6 class="text-uppercase fw-bold py-2 ">
+                            nome passeggero
+                        </h6>
+                    </div>
+                    <div class="row box-border col-10">
+                        <div class="col-3 my-3">
+                            <span class="fw-bold p-3">Offerta</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="fw-bold p-3">Carrozza</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="fw-bold p-3">Codice CP</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="fw-bold p-3">Costo biglietto</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="p-3">Biglietto standard</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="p-3">5</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="p-3">45633</span>
+                        </div>
+                        <div class="col-3 my-3">
+                            <span class="p-3">2.10€</span>
+                        </div>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+       </div>
+
         
     </main>
 
