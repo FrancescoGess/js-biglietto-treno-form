@@ -16,11 +16,9 @@
 //Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 //definire le constanti
-const form = document.getElementById('form')
-
-
-form.addEventListener('submit', function(event){
-    event.preventDefault();
-
-    let name = document.getElementById()
-})
+const nomePasseggero = document.getElementById('name');
+const kmPercorso = document.getElementById('km');
+const etaPasseggero = document.getElementById('eta');
+const sendButton = document.getElementById('send-btn');
+const cancelButton = document.getElementById ('cancel-btn');
+let prezzoBiglietto = document.getElementById('price');

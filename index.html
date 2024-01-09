@@ -34,10 +34,10 @@
             <form id="form">
                 <div class="row">
                   <div class="col-4">
-                    <input type="text" class="form-control" placeholder="Inserisci Nome Completo">
+                    <input type="text" id="name" class="form-control" placeholder="Inserisci Nome Completo">
                   </div>
                   <div class="col-4">
-                    <input type="number" class="form-control" placeholder="Km">
+                    <input type="number" id="km" class="form-control" placeholder="Km">
                   </div>
                   <div class="col-4 text-center ">
                     <select name="choose.age" id="age" required>
@@ -51,14 +51,9 @@
 
                     <div>
 
-                        <input type="submit" class="btn btn-secondary mx-3 fw-bold" value="Genera" style="color: #b91450;"/>
+                        <input type="submit" id="submit" class="btn btn-secondary mx-3 fw-bold" value="Genera" style="color: #b91450;"/>
 
                         <input type="submit" class="btn btn-secondary mx-3 fw-bold" value="Annulla" style="color: #b91450;"/>
-
-                        
-                        <button id="clear" class="btn btn-secondary">
-                            <span class="title-grid fw-bold" onclick="resetDati">Annulla</span>
-                        </button>
                     </div>
                   </div>
                 </div>
